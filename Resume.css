@@ -1,0 +1,317 @@
+body{
+    background-color: #B1B1B1;
+    background-image: url(Images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    background-color: #252525;
+}
+
+.right{
+    padding-right: 10px;
+    float: right;
+}
+
+.left{
+    padding-right: 10px;
+    float: left;
+}
+
+nav{
+    padding-top: 20px;
+}
+
+.cover{
+    border-radius: 10px;
+}
+
+.name{
+    color: #000262;
+    font: 40px bolder;
+    font-family:Microsoft JhengHei;
+}
+
+.intro{
+    color: #0429FF;
+    font: 25px;
+    font-style: italic;
+    font-family:Microsoft JhengHei;
+}
+
+article{
+    padding-bottom: 20px;
+}
+
+footer{
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 10%;
+    padding-top: 15px;
+    font-family: DFKai-SB;
+    background-color: black;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+/*區塊*/
+.row {
+    margin: 8px -16px;
+    position: relative;
+    top: 20px;
+    left: 14%;
+}
+  
+.row,
+.row > .column {
+    padding: 8px;
+}
+  
+.column {
+    float: left;
+    width: 35%;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.content {
+    background-color: #7E7E7E;
+    padding: 10px;
+    color: #F0EAF5;
+    border-radius: 5px ;
+    text-align: center;
+}
+  
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+  }
+}
+  
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+  }
+}
+
+.sub{
+    color: white;
+    font: 28px bolder;
+    text-decoration:underline;
+    font-family:Microsoft JhengHei;
+}
+
+.con{
+    color: white;
+    font: 25px;
+    font-family:Microsoft JhengHei;
+}
+
+/*超連結*/
+a:link{
+    color: #F2BDFF;
+}
+a:visited{
+    color: #BDE1FF;
+}
+a:hover{
+    cursor: pointer;
+}
+
+
+td{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+th{
+    font-family:Microsoft JhengHei;
+    font: 20px bold;
+    color: #A3EFFF;
+}
+
+.thh{
+    font-family:Microsoft JhengHei;
+    font: 20px bold;
+    color: #A3EFFF;
+}
+
+.exp{
+    color: #A3FFBC;
+    font: 25px;
+    font-family:Microsoft JhengHei;
+}
+
+/*時間軸*/
+.line{
+    color: #595959;
+}
+
+.timeline-small {
+    max-width: 350px;
+    max-height: 630px;
+    overflow: hidden;
+    margin: 30px auto 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.timeline-small-body ul {
+    padding: 1em 0 0 2em;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+.timeline-small-body ul::before {
+    content: ' ';
+    height: 100%;
+    width: 3px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    z-index: 0;
+}
+.timeline-small-body li div {
+    display: inline-block;
+    margin: 1em 0;
+    vertical-align: top;
+}
+.timeline-small-body .bullet {
+    width: 1rem;
+    height: 1rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 2;
+    margin-right: 1rem;
+    margin-top: 7%;
+}
+.timeline-small-body .bullet.blue {
+    background-color: aquamarine;
+    border: 3px solid cadetblue;
+}
+.timeline-small-body .bullet.green {
+    background-color: lightseagreen;
+    border: 3px solid #B0E8E2;
+}
+.timeline-small-body .date {
+    width: 23%;
+    font-size: 15px;
+    padding-top: 0.40rem;
+    padding-right: 3px;
+}
+.timeline-small-body .desc {
+    width: 50%;
+}
+.timeline-small-body h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+.timeline-small-body h4 {
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: #808080;
+}
+
+/*skills bar*/
+.skills{
+    width: 100%;
+    max-width: 450px;
+    padding: 0 20px;
+}
+
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar{
+    height: 20px;
+    background: #cacaca;
+    border-radius: 8px;
+}
+
+.skill-per{
+    height: 20px;
+    background-color: #0fbcf9;
+    border: radius 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: 35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+/*照片翻轉*/
+.flip-container {
+    perspective: 1000;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 125px;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
