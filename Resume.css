@@ -315,3 +315,161 @@ th{
 .back {
     transform: rotateY(180deg);
 }
+
+/*圓形圖*/
+.circle_process{
+    position: absolute;
+    left:45px;
+    top: 110px;
+    width: 199px;
+    height : 200px;
+    margin: 0;
+}
+
+.circle_process .wrapper{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+}
+
+.circle_process .right{
+    right:0;
+}
+
+.circle_process .left{
+    left:0;
+}
+
+.circle_process .circle{
+    width: 160px;
+    height: 160px;
+    border:20px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    transform : rotate(-135deg);
+}
+
+.circle_process .rightcircle{
+    border-top:20px solid rgb(0, 247, 255);
+    border-right:20px solid rgb(0, 247, 255);
+    right:0;
+    -webkit-animation: circle_right 5s linear both;
+}
+
+.circle_process .leftcircle{
+    border-bottom:20px solid rgb(0, 247, 255);
+    border-left:20px solid rgb(0, 247, 255);
+    left:0;
+    -webkit-animation: circle_left 4.55s linear both;
+}
+
+@-webkit-keyframes circle_right{
+    0%{
+        -webkit-transform: rotate(-135deg);
+    }
+    50%,100%{
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes circle_left{
+    0%,50%{
+        -webkit-transform: rotate(-150deg);
+    }
+    100%{
+        -webkit-transform: rotate(-30deg);
+    }
+}
+
+.circle_process2{
+    position: absolute;
+    left: 265px;
+    top: 110px;
+    width: 199px;
+    height : 200px;
+}
+
+.circle_process2 .wrapper{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+}
+
+.circle_process2 .right2{
+    right:0;
+}
+
+.circle_process2 .left2{
+    left:0;
+}
+
+.circle_process2 .circle{
+    width: 160px;
+    height: 160px;
+    border:20px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    transform : rotate(-135deg);
+}
+
+.circle_process2 .rightcircle2{
+    border-top:20px solid rgb(242, 147, 255);
+    border-right:20px solid rgb(242, 147, 255);
+    right:0;
+    -webkit-animation: circle_right2 5s linear both;
+}
+
+.circle_process2 .leftcircle2{
+    border-bottom:20px solid rgb(242, 147, 255);
+    border-left:20px solid rgb(242, 147, 255);
+    left:0;
+    -webkit-animation: circle_left2 4.55s linear both;
+}
+
+@-webkit-keyframes circle_right2{
+    0%{
+        -webkit-transform: rotate(-135deg);
+    }
+    50%,100%{
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes circle_left2{
+    0%,50%{
+        -webkit-transform: rotate(-150deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+.circletxt{
+    font-size: 30px;
+    position: absolute;
+    left: 55px;
+    top:40px ;
+}
+
+.circletxt2{
+    font-size: 30px;
+    position: absolute;
+    left: 55px;
+    top:50px ;
+}
+
+.content1{
+    position: relative;
+    height: 330px;
+    background-color: #7E7E7E;
+    padding: 10px;
+    color: #F0EAF5;
+    border-radius: 5px ;
+    text-align: center;
+}
